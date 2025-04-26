@@ -1,0 +1,162 @@
+/* App.css updates */
+.app {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dashboard.css updates */
+.dashboard {
+  width: 100%;
+  max-width: 90%; /* Increased from 1200px */
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.robot-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.robot-head {
+  width: 120px; /* Reduced size */
+  height: 120px; /* Reduced size */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10C30 10 20 30 20 50C20 75 35 90 50 90C65 90 80 75 80 50C80 30 70 10 50 10Z" fill="%23E6EEF2" stroke="%23C5D1D9" stroke-width="1"/><circle cx="35" cy="40" r="5" fill="%233B4B59"/><circle cx="65" cy="40" r="5" fill="%233B4B59"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 20px;
+}
+
+.severity-indicators {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.severity-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center;
+}
+
+.severity-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.severity-badge {
+  padding: 8px;
+  border-radius: 8px 8px 4px 4px;
+  width: 65px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.badge-icon {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+
+.badge-label {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.incident-item {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.incident-summary {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-panel {
+  padding: 15px;
+}
+
+.incidents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.control-buttons button, .filter-controls button, .sort-controls button {
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Make the list more compact */
+.incident-list {
+  margin-top: 15px;
+}
+
+/* Make the incident items more compact */
+.incident-item {
+  margin-bottom: 8px;
+}
+
+.incident-title {
+  font-size: 14px;
+}
+
+.incident-severity {
+  font-size: 12px;
+}
+
+/* View details button in list */
+.view-details-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+}

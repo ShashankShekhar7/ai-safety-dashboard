@@ -1,0 +1,216 @@
+body {
+  background: linear-gradient(to right, #3b4142, #f3f8ff);
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dashboard-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.robot-visual {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: flex-start;
+}
+
+.robot-head {
+  width: 250px;
+  height: 250px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10C30 10 20 30 20 50C20 75 35 90 50 90C65 90 80 75 80 50C80 30 70 10 50 10Z" fill="%23E6EEF2" stroke="%23C5D1D9" stroke-width="1"/><circle cx="35" cy="40" r="5" fill="%233B4B59"/><circle cx="65" cy="40" r="5" fill="%233B4B59"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 30px;
+}
+
+.severity-indicators {
+  flex-grow: 1;
+}
+
+.severity-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.severity-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.severity-badge {
+  padding: 10px;
+  border-radius: 10px 10px 5px 5px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.badge-icon {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.badge-label {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.severity-badge.high {
+  background-color: #e74c3c;
+}
+
+.severity-badge.medium {
+  background-color: #e67e22;
+}
+
+.severity-badge.low {
+  background-color: #f1c40f;
+}
+
+.severity-badge.medium-green {
+  background-color: #2ecc71;
+}
+
+.severity-badge.medium-teal {
+  background-color: #1abc9c;
+}
+
+.severity-badge.info {
+  background-color: #3498db;
+}
+
+.severity-badge.low-info {
+  background-color: #87CEEB;
+}
+
+.control-panel {
+  padding: 20px;
+}
+
+.incidents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.incidents-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.control-buttons button, .filter-controls button, .sort-controls button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.report-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.incidents-count {
+  background-color: #f8f9fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #555;
+}
+
+.view-details-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.reported-date button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.filter-controls, .sort-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls button, .sort-controls button {
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+.filter-controls button.active, .sort-controls button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.report-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.report-form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.report-form-container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
